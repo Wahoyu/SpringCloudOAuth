@@ -3,8 +3,6 @@ r
 Bborrow-service/src/main/java/com/test/entity/UserBorrowDetail.java,6\1\616266f37e5d4bdff71c1209a919c5fb5e591405
 j
 :user-service/src/main/java/com/test/mapper/UserMapper.java,2\3\23486b42280a9e1dd1a759299d413b260582e07c
-D
-user-service/pom.xml,d\2\d2f5d1978e5f519100a679c4109f89296278badc
 r
 Bbook-service/src/main/java/com/test/controller/BookController.java,a\8\a83bfcdb064da8848bfaf12e931a8c9a9c9ba626
 j
@@ -19,8 +17,6 @@ a
 1commons/src/main/java/com/test/entity/Borrow.java,f\a\faa5b0c6db87309804a4d618ff971522782c1d79
 _
 /commons/src/main/java/com/test/entity/User.java,b\4\b49c7866b61c2dfd4a69c21a2491d37fe342f287
-F
-borrow-service/pom.xml,a\f\afe34522af212c85394afd5e6452452bd0787319
 ?
 commons/pom.xml,8\3\83c7f1c3bc8463fc5ab936b79403a9ba63515391
 g
