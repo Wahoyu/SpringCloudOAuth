@@ -1,0 +1,16 @@
+2022-10-03 10:49:02,374 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2022-10-03 10:49:02,825 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-10-03 10:49:02,826 INFO listen for service meta change
+
+2022-10-03 10:49:07,368 INFO [NACOS-DISTRO] healthy server list changed, old: [172.20.96.106:8848], new: [172.20.96.106:8848]
+
+2022-10-03 10:55:21,752 INFO GlobalConfig{taskDispatchPeriod=2000, batchSyncKeyCount=1000, syncRetryDelay=5000, dataWarmup=false, expireInstance=true, loadDataRetryDelayMillis=30000}
+
+2022-10-03 10:55:22,250 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-10-03 10:55:22,251 INFO listen for service meta change
+
+2022-10-03 10:55:26,753 INFO [NACOS-DISTRO] healthy server list changed, old: [172.20.96.106:8848], new: [172.20.96.106:8848]
+

@@ -16,6 +16,7 @@ public class BorrowController {
 
     @RequestMapping("/borrow/{uid}")
     UserBorrowDetail findUserBorrows(@PathVariable("uid") int uid){
+        System.out.println("Hello,负载均衡测试！");
         return service.getUserBorrowDetailByUid(uid);
     }
 }

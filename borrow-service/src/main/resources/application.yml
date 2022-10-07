@@ -1,6 +1,13 @@
 server:
   port: 8301
 spring:
+  application:
+    name: borrow-service
+  cloud:
+    nacos:
+      discovery:
+        # 配置Nacos注册中心地址
+        server-addr: localhost:8848
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cloudstudy
@@ -19,3 +26,9 @@ security:
     resource:
       #Token信息获取和校验地址
       token-info-uri: http://localhost:8500/sso/oauth/check_token
+feign:
+  oauth2:
+    #开启Oauth支持，这样就会在请求头中携带Token了
+    enabled: true
+    #同时开启负载均衡支持
+    load-balanced: true
