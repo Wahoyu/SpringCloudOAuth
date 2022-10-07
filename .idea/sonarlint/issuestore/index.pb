@@ -21,3 +21,17 @@ _
 commons/pom.xml,8\3\83c7f1c3bc8463fc5ab936b79403a9ba63515391
 g
 7commons/src/main/java/com/test/mapper/BorrowMapper.java,d\b\db47a5dfe00cc3541c8f99ce0dddcc96a46d23a5
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+D
+book-service/pom.xml,e\6\e644ef49641e7b9b6b80b6181b8f9b17771bda26
+h
+8auth-service/src/main/java/com/test/AuthApplication.java,8\1\814e06166e67e48bcbafd9a1551b0244d9ac1e9d
+F
+borrow-service/pom.xml,a\f\afe34522af212c85394afd5e6452452bd0787319
+l
+<borrow-service/src/main/java/com/test/BorrowApplication.java,2\b\2b3cc2b8baf14de3938085684e9816747fecbc5d
+D
+user-service/pom.xml,d\2\d2f5d1978e5f519100a679c4109f89296278badc
+h
+8book-service/src/main/java/com/test/BookApplication.java,a\f\af869e00ecff568a2b4cf70839e420db31a18c97
