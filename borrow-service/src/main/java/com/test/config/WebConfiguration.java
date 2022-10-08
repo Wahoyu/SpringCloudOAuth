@@ -3,8 +3,11 @@ package com.test.config;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.oauth2.client.DefaultOAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
+import org.springframework.security.oauth2.client.token.AccessTokenRequest;
+import org.springframework.security.oauth2.client.token.DefaultAccessTokenRequest;
 import org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsResourceDetails;
 
 import javax.annotation.Resource;
@@ -15,9 +18,12 @@ public class WebConfiguration {
     @Resource
     OAuth2ClientContext context;
 
-    @LoadBalanced   //和RestTemplate一样直接添加注解就行了
+    @LoadBalanced
     @Bean
     public OAuth2RestTemplate restTemplate(){
         return new OAuth2RestTemplate(new ClientCredentialsResourceDetails(), context);
     }
+
+
+
 }

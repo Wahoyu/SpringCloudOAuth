@@ -1,6 +1,4 @@
 
-r
-Bborrow-service/src/main/java/com/test/entity/UserBorrowDetail.java,6\1\616266f37e5d4bdff71c1209a919c5fb5e591405
 j
 :user-service/src/main/java/com/test/mapper/UserMapper.java,2\3\23486b42280a9e1dd1a759299d413b260582e07c
 r
@@ -25,3 +23,15 @@ h
 8auth-service/src/main/java/com/test/AuthApplication.java,8\1\814e06166e67e48bcbafd9a1551b0244d9ac1e9d
 h
 8book-service/src/main/java/com/test/BookApplication.java,a\f\af869e00ecff568a2b4cf70839e420db31a18c97
+M
+auth-service/auth-service.iml,6\2\62bf8ca65f5f3c5002f9bace1fac4663fd1ddaf1
+u
+Ebook-service/src/main/java/com/test/config/ResourceConfiguration.java,b\c\bcc46ba465df8005bfe31a53a5b9ff955dd851d9
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+D
+auth-service/pom.xml,7\f\7f617cadbbc161fc020296c3a971388d61795426
+D
+book-service/pom.xml,e\6\e644ef49641e7b9b6b80b6181b8f9b17771bda26
+D
+user-service/pom.xml,d\2\d2f5d1978e5f519100a679c4109f89296278badc

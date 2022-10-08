@@ -14,4 +14,6 @@ public class ResourceConfiguration extends ResourceServerConfigurerAdapter { //�
                 .anyRequest().access("#oauth2.hasScope('borrow')");  //添加自定义规则
                 //Token必须要有我们自定义scope授权才可以访问此资源
     }
+
+
 }

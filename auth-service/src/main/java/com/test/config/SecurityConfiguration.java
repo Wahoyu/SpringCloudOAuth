@@ -6,7 +6,11 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -28,10 +32,30 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .passwordEncoder(encoder)
                 .withUser("test").password(encoder.encode("123456")).roles("USER");
     }
-  
+
+
     @Bean   //这里需要将AuthenticationManager注册为Bean，在OAuth配置中使用
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
+    }
+
+
+    @Bean
+    public JwtAccessTokenConverter tokenConverter(){  //Token转换器，将其转换为JWT
+        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+        converter.setSigningKey("lbwnb");   //这个是对称密钥，一会资源服务器那边也要指定为这个
+        return converter;
+    }
+
+    @Bean
+    @Override
+    public UserDetailsService userDetailsServiceBean() throws Exception {
+        return super.userDetailsServiceBean();
+    }
+
+    @Bean
+    public TokenStore tokenStore(JwtAccessTokenConverter converter){  //Token存储方式现在改为JWT存储
+        return new JwtTokenStore(converter);  //传入刚刚定义好的转换器
     }
 }
